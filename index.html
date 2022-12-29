@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QrCode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="QR Code-amico.png" class="imagem-principal">
+    <div class="conteudo"> 
+    <h1 class="titulo">Gerador de QRCode</h1>
+    <script src="script.js"></script>
+    <h2 class="texto-2">Insira algum link ou texto:</h2>
+    <textarea class='texto' maxlength="256" rows="4"></textarea><br>
+    <button class='botao' onclick="GerarQRCode()">Gerar QRCode</button><br>
+    <img class='imagem' id='QRCodeImage'>
+    <script>function GerarQRCode() {
+        var textoUsuario = document.querySelector('textarea').value;
+        var GoogleChartAPI = 'https://chart.googleapis.com/chart?cht=qr&chs=350x300&chl=';
+        var conteudoQRCODE = GoogleChartAPI +  textoUsuario;
+        document.querySelector('#QRCodeImage').src = conteudoQRCODE;
+    }</script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Edu+TAS+Beginner&family=Playfair+Display&family=Varela+Round&display=swap');
+
+
+        .conteudo {
+            margin-left: 38%;
+            font-family: 'Varela Round', sans-serif;
+        
+        }
+        
+        .titulo {
+                color: rgb(241, 237, 231);
+                background-color: rgb(84, 17, 146);
+                width: 320px;
+        }
+        
+        .texto {
+            margin-left: 70px;
+            box-shadow: 5px 10px;
+        
+        }
+        
+        .botao {
+            border-radius: 10px;
+            font-family: 'Varela Round', sans-serif;
+            margin-left: 95px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        
+        .botao:hover {
+            background-color: rgb(84, 17, 146);
+            color: rgb(241, 237, 231);
+        }
+        
+        .imagem {
+            
+            display: flex;
+            justify-content: center;
+        
+        }</style>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Edu+TAS+Beginner&family=Playfair+Display&family=Varela+Round&display=swap');
+
+* {
+    background-color: rgb(17, 9, 26);
+}
+
+.conteudo {
+    margin-left: 20%;
+    font-family: 'Varela Round', sans-serif;
+    float: left;
+}
+
+.titulo {
+        color: rgb(241, 237, 231);
+        background-color: rgb(84, 17, 146);
+        width: 320px;
+}
+
+.texto {
+    margin-left: 70px;
+    box-shadow: 10px 10px;
+    background-color: aliceblue;
+    width: 200px;
+
+}
+
+.texto-2 {
+    color:rgb(241, 237, 231);
+}
+
+.botao {
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    color:rgb(241, 237, 231);
+    background-color: rgb(84, 17, 146);
+    height: 50px;
+    width: 150px;
+}
+
+.botao:hover {
+    transition: 0.5s;
+    background-color: rgb(154, 102, 197);
+    color:rgb(241, 237, 231);
+}
+
+.imagem {
+    
+    display: flex;
+    justify-content: center;  
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 10px;
+
+}
+
+.imagem-principal {
+    display: flex;
+    width: 380px;
+    height: 400px;
+    float: right;
+    margin-top: 60px;
+    margin-right: 40px;
+
+}
